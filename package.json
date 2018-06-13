@@ -1,0 +1,23 @@
+{
+  "name": "blood-donor-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js add "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shefali-Sharma/Blood-Donor-App.git"
+  },
+  "author": "Shefali Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shefali-Sharma/Blood-Donor-App/issues"
+  },
+  "homepage": "https://github.com/Shefali-Sharma/Blood-Donor-App#readme",
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "yargs": "^11.0.0"
+  }
+}
