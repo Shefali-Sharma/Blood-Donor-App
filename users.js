@@ -27,7 +27,7 @@ var addUser = (username, firstname, lastname, age, bloodgroup, emailId) => {
     emailId
   };
 
-  var duplicateUsers = users.filter((note) => note.username == username);
+  var duplicateUsers = users.filter((user) => user.username == username);
   if(duplicateUsers.length == 0){
     users.push(user);
     saveUsers(users);
