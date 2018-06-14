@@ -11,13 +11,14 @@ console.log('Command:', command);
 console.log('Yargs:', argv);
 
 if(command == 'add'){
-  console.log('Add a user');
+  users.addUser();
+
 }
 else if(command == 'remove'){
-  console.log('Remove a user');
+  users.removeUser();
 }
 else if(command == 'getall'){
-  console.log('Getting all users');
+  users.getAllUsers();
 }
 else{
   console.log('Command not recognized');
