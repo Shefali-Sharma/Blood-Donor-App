@@ -27,8 +27,8 @@ var addUser = (username, firstname, lastname, age, bloodgroup, emailId) => {
     emailId
   };
 
-  var duplicateUsers = users.filter((user) => user.username == username);
-  if(duplicateUsers.length == 0){
+  var duplicateUsers = users.filter((user) => user.username === username);
+  if(duplicateUsers.length === 0){
     users.push(user);
     saveUsers(users);
     return user;
@@ -46,6 +46,15 @@ var addUser = (username, firstname, lastname, age, bloodgroup, emailId) => {
   console.log('Email-Id: ' + emailId);
 };
 
+var getUser = (username) => {
+  var users = fetchUsers();
+  var user = {
+    username,
+  };
+  var myUser = users.filter((user) => user.username === username);
+  return myUser[0];
+};
+
 var removeUser = (username) => {
   console.log('User removed: ' + username);
 };
@@ -57,5 +66,6 @@ var getAllUsers = () => {
 module.exports = {
   addUser,
   removeUser,
-  getAllUsers
+  getAllUsers,
+  getUser
 };

@@ -17,6 +17,18 @@ if(command == 'add'){
 else if(command == 'remove'){
   users.removeUser(argv.username);
 }
+else if(command == 'getuser'){
+  var user = users.getUser(argv.username);
+  if(user){
+    console.log("User Found!");
+    console.log('Username: ' + user.username);
+    console.log('Firstname: ' + user.firstname);
+    console.log('Lastname: ' + user.lastname);
+    console.log('Age: ' + user.age);
+    console.log('Bloodgroup: ' + user.bloodgroup);
+    console.log('Email-Id: ' + user.emailId);
+  }
+}
 else if(command == 'getall'){
   users.getAllUsers();
 }
