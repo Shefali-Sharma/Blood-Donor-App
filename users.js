@@ -2,12 +2,12 @@ console.log('Starting Users.');
 
 const fs = require('fs');
 
-var addUser = () => {
-  console.log('Add a user');
+var addUser = (username, firstname, lastname, age, bloodgroup, emailId) => {
+  console.log('Adding a user');
 };
 
 var removeUser = () => {
-  console.log('Remove a user');
+  console.log('Removing a user');
 };
 
 var getAllUsers = () => {

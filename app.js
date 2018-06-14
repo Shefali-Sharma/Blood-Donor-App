@@ -11,11 +11,11 @@ console.log('Command:', command);
 console.log('Yargs:', argv);
 
 if(command == 'add'){
-  users.addUser();
+  users.addUser(argv.username, argv.firstname, argv.lastname, argv.age, argv.bloodgroup, argv.emailId);
 
 }
 else if(command == 'remove'){
-  users.removeUser();
+  users.removeUser(argv.username);
 }
 else if(command == 'getall'){
   users.getAllUsers();
