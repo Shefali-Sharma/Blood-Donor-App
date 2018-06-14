@@ -11,6 +11,7 @@ console.log('Command:', command);
 console.log('Yargs:', argv);
 
 if(command == 'add'){
+  // node app.js add --username="shefali9222" --firstname="Shefali" --lastname="Sharma" --age=26 --bloodgroup="B+" --emailId="shefali92@gmail.com"
   users.addUser(argv.username, argv.firstname, argv.lastname, argv.age, argv.bloodgroup, argv.emailId);
 
 }
